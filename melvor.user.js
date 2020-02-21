@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Melvor Idle automation
 // @namespace    Melvor
-// @version      0.12.2.021 (for Melvor 0.12.2)
+// @version      0.12.2.022 (for Melvor 0.12.2)
 // @description  Aleviates some of the micro management
 // @downloadURL  https://raw.githubusercontent.com/Katorone/AutoMelvorIdle/raw/master/melvor.user.js
 // @author       Katorone
@@ -283,8 +283,8 @@ var bot_bigBonesReserve = 0;
         // If the patch isn't unlocked, try to unlock it.
         if (!newFarmingAreas[area].patches[patch].unlocked && bot_farming_autoBuyAllotments) {
           unlockPlot(area, patch);
-          // Stop the script so the game can update.
-          return true;
+          // We don't know if the plot was bought or not, continue the loop
+          continue;
         }
         // If the patch has a grown plant, harvest it.
         if (newFarmingAreas[area].patches[patch].hasGrown) {
