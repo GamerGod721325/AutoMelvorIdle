@@ -1,6 +1,8 @@
 # AutoMelvorIdle
 Tampermonkey script, adding more automation for Melvor Idle (https://melvoridle.com/)
 
+If you notice that the farming automation isn't working as expected, please review its configuration inside the script.  It's safe to change any configuration values by following the instructions inside of the script.
+
 How to use:
 - Get Tampermonkey: https://www.tampermonkey.net/
 - Follow the steps on the page for your browser to install it.
