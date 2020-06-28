@@ -1,3 +1,5 @@
+I've currently stopped updating this script. I strongly suggest using Scripting Engine for Melvor Idle instead: https://gitlab.com/aldousWatts/SEMI
+
 # AutoMelvorIdle
 Tampermonkey script, adding more automation for Melvor Idle (https://melvoridle.com/)
 
