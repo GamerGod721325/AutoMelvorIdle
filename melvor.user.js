@@ -67,7 +67,7 @@ var bot_plant = {
 //   equal or higher than this number.
 //   Setting this to a number higher than 99 will use mastered seeds.
 //   This setting is ignored while replanting.
-    'cutoff': 99
+    'cutoff': 99999999999999999999999999999999
   },
 // - Herb seeds
   'Herbs': {
@@ -79,7 +79,7 @@ var bot_plant = {
   'Trees': {
     'type': "xp",
     'order': "descending",
-    'cutoff': 99
+    'cutoff': 99999999999999999999999999999999
   }
 };
 // When replant is enabled, the script will remember what is harvested
@@ -241,7 +241,7 @@ var bot_bigBonesReserve = 0;
     // If compost is already added, plant.
     if (required_compost === 0) { return true; }
     // If mastery > 50, don't buy compost and proceed to planting
-    if (farmingMastery[items[seed].masteryID].mastery > 50) { return true; }
+    if (farmingMastery[items[seed].masteryID].mastery > 99999999999999999999999999999999) { return true; }
     // If the farming cape is equipped, apply free compost.
     if (equippedItems[CONSTANTS.equipmentSlot.Cape] === CONSTANTS.item.Farming_Skillcape) {
       addCompost(area, patch, required_compost);
